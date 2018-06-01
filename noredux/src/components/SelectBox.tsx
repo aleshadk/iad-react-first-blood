@@ -2,13 +2,13 @@ import * as React from 'react';
 
 import { INamed } from '../../interfaces';
 
-export interface ISelectBoxProps {
+interface ISelectBoxProps {
     items: INamed[];
     label: string;
     onChange(value): void;
 }
 
-export interface ISelectBoxState {
+interface ISelectBoxState {
     value: string;
 }
 
@@ -16,10 +16,6 @@ export class SelectBox extends React.Component<ISelectBoxProps, ISelectBoxState>
     public readonly state: ISelectBoxState = {
         value: '-',
     };
-
-    public compRece(): void {
-        console.log(this.props);
-    }
 
     public handleChange(e): void {
         const value = e.target.value;
