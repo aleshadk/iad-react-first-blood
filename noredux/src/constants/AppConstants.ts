@@ -1,4 +1,0 @@
-export const APP_ACTION = {
-    LOADING: 'APP_IS_LOADING',
-    GETS_DATA: 'APP_GETS_DATA'
-};
